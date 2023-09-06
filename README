@@ -1,0 +1,14 @@
+This server has 3 endpoints, each receiving Github events via Webhook.
+We use ngrok in order to get github to integrate with our locally running server.
+
+Besides the server, make sure you have ngrok installed locally.
+
+Running the server:
+    `pip3 install -r requirements`
+    `python3 main.py`
+
+Running ngrok:
+    `ngrok config add-authtoken <YOUR NGROK TOKEN HERE>`
+    `ngrok http 1337`
+
+make sure to update the correct ngrok url in your Github organiztaion!
